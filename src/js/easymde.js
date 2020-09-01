@@ -1423,7 +1423,7 @@ var toolbarBuiltInButtons = {
     'code': {
         name: 'code',
         action: toggleCodeBlock,
-        className: 'fa fa-code',
+        className: 'eva eva-code-outline',
         title: 'Code',
     },
     'quote': {
@@ -1443,7 +1443,7 @@ var toolbarBuiltInButtons = {
     'ordered-list': {
         name: 'ordered-list',
         action: toggleOrderedList,
-        className: 'fa fa-list-ol',
+        className: 'eva eva-list-outline',
         title: 'Numbered List',
         default: true,
     },
@@ -1459,14 +1459,14 @@ var toolbarBuiltInButtons = {
     'link': {
         name: 'link',
         action: drawLink,
-        className: 'fa fa-link',
+        className: 'eva eva-link-2-outline',
         title: 'Create Link',
         default: true,
     },
     'image': {
         name: 'image',
         action: drawImage,
-        className: 'fa fa-image',
+        className: 'eva eva-image-outline',
         title: 'Insert Image',
         default: true,
     },
@@ -1494,7 +1494,7 @@ var toolbarBuiltInButtons = {
     'preview': {
         name: 'preview',
         action: togglePreview,
-        className: 'fa fa-eye',
+        className: 'eva eva-eye-outline',
         noDisable: true,
         title: 'Toggle Preview',
         default: true,
