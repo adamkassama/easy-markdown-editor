@@ -206,7 +206,7 @@ function createToolbarButton(options, enableActions, enableTooltips, shortcuts, 
         var classNamePart = classNameParts[classNameIndex];
         // Split icon classes from the button.
         // Regex will detect "fa", "fas", "fa-something" and "fa-some-icon-1", but not "fanfare".
-        if (classNamePart.match(/^eva([srlb]|(-[\w-]*)|$)/)) {
+        if (classNamePart.match(/^fa([srlb]|(-[\w-]*)|$)/)) {
             iconClasses.push(classNamePart);
         } else {
             el.classList.add(classNamePart);
@@ -1423,7 +1423,7 @@ var toolbarBuiltInButtons = {
     'code': {
         name: 'code',
         action: toggleCodeBlock,
-        className: 'eva eva-code-outline',
+        className: 'fa fa-code',
         title: 'Code',
     },
     'quote': {
@@ -1443,7 +1443,7 @@ var toolbarBuiltInButtons = {
     'ordered-list': {
         name: 'ordered-list',
         action: toggleOrderedList,
-        className: 'eva eva-list-outline',
+        className: 'fa fa-list-ol',
         title: 'Numbered List',
         default: true,
     },
@@ -1459,14 +1459,14 @@ var toolbarBuiltInButtons = {
     'link': {
         name: 'link',
         action: drawLink,
-        className: 'eva eva-link-2-outline',
+        className: 'fa fa-link',
         title: 'Create Link',
         default: true,
     },
     'image': {
         name: 'image',
         action: drawImage,
-        className: 'eva eva-image-outline',
+        className: 'fa fa-image',
         title: 'Insert Image',
         default: true,
     },
@@ -1494,7 +1494,7 @@ var toolbarBuiltInButtons = {
     'preview': {
         name: 'preview',
         action: togglePreview,
-        className: 'eva eva-eye-outline',
+        className: 'fa fa-eye',
         noDisable: true,
         title: 'Toggle Preview',
         default: true,
