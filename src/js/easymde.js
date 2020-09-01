@@ -206,7 +206,7 @@ function createToolbarButton(options, enableActions, enableTooltips, shortcuts, 
         var classNamePart = classNameParts[classNameIndex];
         // Split icon classes from the button.
         // Regex will detect "fa", "fas", "fa-something" and "fa-some-icon-1", but not "fanfare".
-        if (classNamePart.match(/^fa([srlb]|(-[\w-]*)|$)/)) {
+        if (classNamePart.match(/^eva([srlb]|(-[\w-]*)|$)/)) {
             iconClasses.push(classNamePart);
         } else {
             el.classList.add(classNamePart);
